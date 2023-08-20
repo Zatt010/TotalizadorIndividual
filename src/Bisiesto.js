@@ -8,6 +8,11 @@ function bisiesto (anio){
       return false
     }
 }
+else{
+  if(anio%4==0){
+    return true
+  }
+}
   return false
 }
 
