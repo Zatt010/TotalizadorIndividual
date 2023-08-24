@@ -1,17 +1,12 @@
 import bisiesto from "./Bisiesto.js";
 
-const yearInput = document.querySelector("#anio-input");
-const form = document.querySelector("#bisiesto-form");
+const cantidad = document.querySelector("#cantidad-input");
+const form = document.querySelector("#totalizador-form");
 const resultadoDiv = document.querySelector("#resultado-div");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const year = Number.parseInt(yearInput.value);
-
-  if (bisiesto(year)) {
-    resultadoDiv.innerHTML = "<p>El año es bisiesto.</p>";
-  } else {
-    resultadoDiv.innerHTML = "<p>El año no es bisiesto.</p>";
-  }
+  const cant = Number.parseInt(cantidad.value);
+    resultadoDiv.innerHTML = "<p>cantidad</p>";
 });
