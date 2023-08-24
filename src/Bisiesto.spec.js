@@ -1,11 +1,7 @@
-import bisiesto from "./Bisiesto.js";
+import Calcular from "./Bisiesto.js";
 
-describe("Es bisiesto", () => {
-  it("Es bisiesto", () => {
-    expect(bisiesto(2008)).toEqual(true);
-  });
-  it("No es bisiesto si no es divisible entre 4", () => {
-    expect(bisiesto(2019 )).toEqual(false);
-    
+describe("Calcular Total", () => {
+  it("Esta bien si:", () => {
+    expect(Calcular(20,3,8.25)).toEqual(64.95);
   });
 });

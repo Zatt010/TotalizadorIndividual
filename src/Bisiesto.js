@@ -1,16 +1,7 @@
-function bisiesto(anio) {
-  if (anio % 4 === 0) {
-    if (anio % 100 === 0) {
-      if (anio % 400 === 0) {
-        return true;
-      } else {
-        return false;
-      }
-    } else {
-      return true;
-    }
-  }
-  return false;
+function Calcular (precio,cantidad,TI) {
+  const precio_neto= precio * cantidad;
+  const impuesto = precio_neto * (TI/100);
+  return precio_neto + impuesto;
 }
 
-export default bisiesto;
+export default Calcular;
