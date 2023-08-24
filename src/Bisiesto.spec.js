@@ -13,4 +13,7 @@ describe("Calcular Total", () => {
   it("Esta bien NV:", () => {
     expect(Calcular(20,3,8)).toEqual(64.8);
   });
+  it("Esta bien UT:", () => {
+    expect(Calcular(20,3,6.65)).toEqual(63.99);
+  });
 });
