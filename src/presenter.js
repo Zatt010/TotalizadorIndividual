@@ -8,5 +8,5 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const cant = Number.parseInt(cantidad.value);
-    resultadoDiv.innerHTML = "<p>cantidad</p>";
+  resultadoDiv.innerHTML = "<p>" + cant + "</p>";
 });
