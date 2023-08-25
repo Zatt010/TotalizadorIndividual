@@ -22,7 +22,10 @@ describe("Calcular Total", () => {
   });
 
   it("Esta bien NV:", () => {
-    expect(Calcular(20,3,8)).toEqual(64.8);
+    expect(Calcular(20, 3, 8)).toEqual({
+      total_con_impuesto: 64.8,
+      descuento: 0.00,
+    });
   });
   it("Esta bien UT:", () => {
     expect(Calcular(20,3,6.65)).toEqual(63.99);
