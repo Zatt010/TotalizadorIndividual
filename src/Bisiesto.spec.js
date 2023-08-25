@@ -8,8 +8,12 @@ describe("Calcular Total", () => {
     });
   });
   it("Esta bien TX:", () => {
-    expect(Calcular(20,3,6.25)).toEqual(63.75);
+    expect(Calcular(20, 3, 6.25)).toEqual({
+      total_con_impuesto: 63.75,
+      descuento: 0.00, 
+    });
   });
+
   it("Esta bien AL:", () => {
     expect(Calcular(20,3,4)).toEqual(62.4);
   });
