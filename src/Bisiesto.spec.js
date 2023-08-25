@@ -58,6 +58,9 @@ describe("Calcular Total", () => {
     });
   });
   it("Esta bien con descuento 30000:", () => {
-    expect(Calcular(1000, 30, 6.65)).toEqual(27195.75); // Redondeado a dos decimales
+    expect(Calcular(1000, 30, 6.65)).toEqual({
+      total_con_impuesto: 27195.75,
+      descuento: 4500.00, // Porcentaje 15%
+    });
   });
 });
